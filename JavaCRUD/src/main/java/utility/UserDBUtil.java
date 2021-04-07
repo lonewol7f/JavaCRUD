@@ -104,7 +104,7 @@ public class UserDBUtil {
 		return success;
 	}
 	
-	public static void deleteuser(int id) {
+	public static void deleteUser(int id) {
 		try {
 			conn = DBUtil.getConnection();
 			stmt = conn.createStatement();

@@ -25,7 +25,7 @@ public class DeleteServlet extends HttpServlet {
 		String id = request.getParameter("uid");
 		int convertedId = Integer.parseInt(id);
 		
-		UserDBUtil.deleteuser(convertedId);
+		UserDBUtil.deleteUser(convertedId);
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/userList.jsp");
 		dispatcher.forward(request, response);
